@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Maps 2</title>
+    <script src="assets/scripts/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/styles/main.css" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/main-menu.css" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/video-page.css" />
+  </head>
+
+  <body>
+    <div id="main-menu">
+      <div class="title-bar">Topography</div>
+
+      <div class="video-row">
+        <div class="video-link video-2" onclick="goToVideoPage({title: 'How to read a map', video: 'how_to_read_a_map.mp4'})">How to read a map</div>
+        <div class="video-link video-2" onclick="goToVideoPage({title: 'What is topography?', video: 'what_is_topography.mp4'})">What is topography?</div>
+      </div>
+
+      <div class="tap-text">Click on a tile to watch video</div>
+    </div>
+
+    <div id="video-page">
+      <div class="title-bar">
+        <div id="back-button"></div>
+        <div id="video-title"></div>
+      </div>
+      <div class="video-container">
+        <video id="video-player"></video>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    startup()
+  </script>
+</html>
